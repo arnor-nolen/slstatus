@@ -67,6 +67,6 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ cpu_perc, "[ %3s%] ", NULL}, 
 	{ ram_perc, "[ %3s%] ", NULL}, 
-	// { run_command, "[ %3s%] ", "pulsemixer --get-volume | awk '{print $1;}'"},
+	{ run_command, "[ %3s%] ", "pulsemixer --get-volume | awk '{print $1;}'"},
 	{ datetime, "[%s]",           "%a %F %I:%M %p" },
 };
