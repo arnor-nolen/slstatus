@@ -65,8 +65,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ cpu_perc, "[ %s%] ", NULL}, 
-	{ ram_perc, "[ %s%] ", NULL}, 
-	{ run_command, "[ %s%] ", "pulsemixer --get-volume | awk '{print $1;}'"},
-	{ datetime, "%s",           "%a %F %I:%M %p" },
+	{ cpu_perc, "[ %3s%] ", NULL}, 
+	{ ram_perc, "[ %3s%] ", NULL}, 
+	// { run_command, "[ %3s%] ", "pulsemixer --get-volume | awk '{print $1;}'"},
+	{ datetime, "[%s]",           "%a %F %I:%M %p" },
 };
